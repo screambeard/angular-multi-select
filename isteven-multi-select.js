@@ -513,14 +513,12 @@ angular.module( 'isteven-multi-select', ['ng'] ).directive( 'istevenMultiSelect'
 
             // refresh button label
             $scope.refreshButton = function() {
-              console.log('refreshButton');
 
                 $scope.varButtonLabel   = '';
                 var ctr                 = 0;
 
-                console.log('attrs.buttonLabelCounter',attrs.buttonLabelCounter, attrs.buttonLabelCounter !== 'undefined', attrs.buttonLabelCounter !== '', attrs.buttonLabelCounter == 'true');
+                //check if option is set to display a counter variable with users icon
                 if ( typeof attrs.buttonLabelCounter !== 'undefined' && attrs.buttonLabelCounter !== '' && attrs.buttonLabelCounter == 'true') {
-                    console.log('bla');
                     angular.forEach( $scope.inputModel, function( value, key ) {
                       if ( typeof value !== 'undefined' && value[ attrs.tickProperty ] === true ) {
                           ctr++;
