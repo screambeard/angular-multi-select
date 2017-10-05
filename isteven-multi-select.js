@@ -524,7 +524,7 @@ angular.module( 'isteven-multi-select', ['ng'] ).directive( 'istevenMultiSelect'
                           ctr++;
                       }
                     });
-                    $scope.varButtonLabel = "<i class='fa fa-users'></i>&nbsp;share" + ctr;
+                    $scope.varButtonLabel = "<i class='fa fa-users'></i>" + ctr + " share";
                     $scope.varButtonLabel = $sce.trustAsHtml( $scope.varButtonLabel + '<span class="caret"></span>' );
                     return
                 }
